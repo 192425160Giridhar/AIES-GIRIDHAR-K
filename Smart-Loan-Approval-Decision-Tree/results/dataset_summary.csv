@@ -1,0 +1,8 @@
+Attribute,Data Type,Unique Values,Missing Values
+Income,int64,995,0
+Credit_Score,int64,306,0
+Employment_Status,object,3,0
+Loan_Amount,int64,995,0
+Repayment_History,int64,11,0
+Age,int64,45,0
+Loan_Status,object,2,0
