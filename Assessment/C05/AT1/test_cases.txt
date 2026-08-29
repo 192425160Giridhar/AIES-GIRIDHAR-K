@@ -1,0 +1,9 @@
+TC1: Tomato + dark brown spots + high humidity + water-soaked lesion + rainy weather -> late_blight
+TC2: Soybean + white powder + cool/dry weather -> powdery_mildew
+TC3: Rice + water-soaked leaf tip + yellow leaf -> bacterial_leaf_blight
+TC4: Yellow mosaic pattern + stunted growth -> viral_mosaic
+TC5: Tomato + light-brown spots + low humidity -> No diagnosis
+
+Backward demonstrations:
+?- test_case(1,F), diagnose_backward(late_blight,F).
+?- test_case(2,F), diagnose_backward(powdery_mildew,F).

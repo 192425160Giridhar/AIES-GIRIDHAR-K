@@ -1,0 +1,11 @@
+Crop Disease Advisory Expert System - Test Run Log
+
+TC1 -> PASS -> late_blight
+TC2 -> PASS -> powdery_mildew
+TC3 -> PASS -> bacterial_leaf_blight
+TC4 -> PASS -> viral_mosaic
+TC5 -> PASS -> No diagnosis
+
+Backward chaining:
+TC1, goal diagnosis(late_blight) -> PROVED
+TC2, goal diagnosis(powdery_mildew) -> PROVED
