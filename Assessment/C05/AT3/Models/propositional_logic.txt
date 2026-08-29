@@ -1,0 +1,17 @@
+PROPOSITIONAL LOGIC MODEL
+
+I = High income
+C = Excellent credit
+E = Permanent employment
+L = No existing loans
+R = Good repayment history
+A = Loan approved
+M = Manual review
+J = Loan rejected
+
+I AND C AND E AND L AND R -> A
+MediumIncome AND GoodCredit AND E AND OneLoan AND R -> M
+PoorCredit AND PoorRepayment -> J
+TwoOrMoreLoans AND PoorRepayment -> J
+
+For Giridhar, I, C, E, L and R are true; therefore A is true.

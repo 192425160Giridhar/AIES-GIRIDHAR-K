@@ -1,0 +1,6 @@
+PRODUCTION RULE MODEL
+
+R1: IF income is high AND credit score is excellent AND employment is permanent AND existing loans are none AND repayment history is good THEN loan is approved.
+R2: IF income is medium AND credit score is good AND employment is permanent AND existing loans are one AND repayment history is good THEN manual review.
+R3: IF credit score is poor AND repayment history is poor THEN loan is rejected.
+R4: IF existing loans are two or more AND repayment history is poor THEN loan is rejected.

@@ -1,0 +1,22 @@
+TEST CASES
+
+1. Giridhar
+Facts: high income, excellent credit, permanent employment, no existing loans, good repayment.
+Query: ?- recommendation(giridhar, R).
+Expected: R = "APPROVED".
+
+2. Rohan
+Facts: medium income, good credit, permanent employment, one existing loan, good repayment.
+Query: ?- recommendation(rohan, R).
+Expected: R = "MANUAL REVIEW".
+
+3. Anita
+Facts: low income, poor credit, temporary employment, two or more loans, poor repayment.
+Query: ?- recommendation(anita, R).
+Expected: R = "REJECTED".
+
+Forward chaining:
+Start with Giridhar's facts -> all R1 conditions become true -> loan_eligible(giridhar) -> APPROVED.
+
+Backward chaining:
+Goal loan_eligible(giridhar) -> prove income, credit, employment, existing loans and repayment sub-goals -> all succeed -> APPROVED.

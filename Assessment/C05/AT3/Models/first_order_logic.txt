@@ -1,0 +1,24 @@
+FIRST-ORDER LOGIC MODEL
+
+Predicates:
+income(X, high)
+credit(X, excellent)
+employment(X, permanent)
+loans(X, none)
+repayment(X, good)
+approved(X)
+review(X)
+rejected(X)
+
+Rules:
+FOR ALL X:
+income(X, high) AND credit(X, excellent) AND employment(X, permanent) AND loans(X, none) AND repayment(X, good) -> approved(X).
+
+FOR ALL X:
+income(X, medium) AND credit(X, good) AND employment(X, permanent) AND loans(X, one) AND repayment(X, good) -> review(X).
+
+FOR ALL X:
+credit(X, poor) AND repayment(X, poor) -> rejected(X).
+
+FOR ALL X:
+loans(X, two_or_more) AND repayment(X, poor) -> rejected(X).
